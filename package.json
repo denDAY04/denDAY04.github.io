@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "deply": "npm run build & push-dir --dir=dist --branch=master"
+    "deploy": "npm run build & push-dir --dir=dist --branch=master"
   },
   "dependencies": {
     "vue": "^2.5.2",
