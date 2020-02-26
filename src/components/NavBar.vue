@@ -4,9 +4,7 @@
     color="primary"
     dark
   >
-    <div class="d-flex align-center">
-      <span class="title">stensig.net</span>
-    </div>
+    <NavBarTitle/>
     <v-spacer></v-spacer>
     <NavBarLinks/>
   </v-app-bar>
@@ -14,17 +12,17 @@
 
 <script>
 import NavBarLinks from './NavBarLinks.vue';
+import NavBarTitle from './NavBarTitle.vue';
 
 export default {
   name: 'NavBar',
   components: {
+    NavBarTitle,
     NavBarLinks,
   },
 };
 </script>
 
 <style scoped>
-.title {
-  text-transform: uppercase;
-}
+
 </style>

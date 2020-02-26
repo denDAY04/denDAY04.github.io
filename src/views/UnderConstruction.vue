@@ -29,7 +29,7 @@ export default {
   font-size: 7em;
 }
 #constructionBox {
-  margin-top: 5em;
+  margin-top: 10em;
 }
 h1{
   font-family: "Times New Roman",Times,serif;

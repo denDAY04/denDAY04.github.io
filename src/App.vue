@@ -1,14 +1,11 @@
 <template>
   <v-app>
     <NavBar/>
-    <v-content>
-      <UnderConstruction/>
-    </v-content>
+    <router-view/>
   </v-app>
 </template>
 
 <script>
-import UnderConstruction from './views/UnderConstruction.vue';
 import NavBar from './components/NavBar.vue';
 
 export default {
@@ -16,7 +13,6 @@ export default {
 
   components: {
     NavBar,
-    UnderConstruction,
   },
 
   data: () => ({
