@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar/>
-    <router-view/>
+    <router-view class="view-container"/>
   </v-app>
 </template>
 
@@ -20,3 +20,9 @@ export default {
   }),
 };
 </script>
+
+<style>
+  .view-container {
+    margin-top: 4em;
+  }
+</style>
