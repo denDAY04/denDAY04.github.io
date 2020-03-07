@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'NavBarTitle',
+  name: 'TheAppBarTitle',
   data() {
     return {
       lightMode: true,

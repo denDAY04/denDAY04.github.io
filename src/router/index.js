@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import UnderConstruction from '../views/UnderConstruction.vue';
 import ProjectsView from '../views/ProjectsView.vue';
+import HomePage from '../views/HomePage.vue';
 
 Vue.use(Router);
 
@@ -10,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      redirect: '/construction', // TODO remove when home page is functional
+      component: HomePage,
     },
     {
       path: '/construction',

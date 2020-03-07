@@ -1,7 +1,7 @@
 <template>
   <span>
     <v-btn
-      href="https://github.com/denDAY04/denday04.github.io"
+      href="https://github.com/denDAY04"
       target="_blank"
       icon
     >
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'NavBarLinks',
+  name: 'TheAppBarLinks',
 };
 </script>
 

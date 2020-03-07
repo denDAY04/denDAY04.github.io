@@ -1,18 +1,27 @@
 <template>
   <v-app>
-    <NavBar/>
-    <router-view class="view-container"/>
+    <TheNavBar/>
+
+    <v-content>
+      <v-container fluid>
+        <router-view/>
+      </v-container>
+    </v-content>
+
+    <TheFooter/>
   </v-app>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
+import TheNavBar from './components/TheAppBar.vue';
+import TheFooter from './components/TheFooter.vue';
 
 export default {
   name: 'App',
 
   components: {
-    NavBar,
+    TheFooter,
+    TheNavBar,
   },
 
   data: () => ({
