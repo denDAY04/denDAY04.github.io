@@ -2,23 +2,25 @@
     <v-row
       align="stretch"
       align-content="stretch"
-      no-gutters>
+     style="height: 100%; min-height: 100%;max-height: 100%"
+    >
       <v-col md="4" sm="12">
         <MainPanel
           title="Experiences"
-          backgroundImg="/img/group.jpg"
+          backgroundImg="/img/books.jpg"
+          description="Employments, educations, and other professional courses"
         />
       </v-col>
       <v-col md="4" sm="12">
         <MainPanel
           title="Projects"
-          backgroundImg="/img/group.jpg"
+          backgroundImg="/img/code.jpg"
         />
       </v-col>
       <v-col md="4" sm="12">
         <MainPanel
           title="Personal"
-          backgroundImg="/img/group.jpg"
+          backgroundImg="/img/desk.jpg"
         />
       </v-col>
     </v-row>
