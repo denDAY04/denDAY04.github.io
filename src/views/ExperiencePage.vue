@@ -28,7 +28,7 @@
 import DataService from '../services/dataService';
 
 export default {
-  name: 'ProjectsView',
+  name: 'ExperiencePage',
   data() {
     return {
       projects: {},

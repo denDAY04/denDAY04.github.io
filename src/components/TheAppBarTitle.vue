@@ -10,36 +10,12 @@
         stensig.net
       </router-link>
     </div>
-    <v-spacer></v-spacer>
-    <v-btn
-      @click="switchLighting"
-      icon
-      title="Toggle dark-mode"
-    >
-      <v-icon>{{ lightModeIcon }}</v-icon>
-    </v-btn>
   </div>
 </template>
 
 <script>
 export default {
   name: 'TheAppBarTitle',
-  data() {
-    return {
-      lightMode: true,
-    };
-  },
-  computed: {
-    lightModeIcon() {
-      return this.lightMode ? 'mdi-lightbulb-off' : 'mdi-lightbulb-on';
-    },
-  },
-  methods: {
-    switchLighting() {
-      this.lightMode = !this.lightMode;
-      this.$vuetify.theme.dark = !this.lightMode;
-    },
-  },
 };
 </script>
 

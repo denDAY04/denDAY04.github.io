@@ -8,7 +8,10 @@
           aspect-ratio="1"
           style="height: 100%; min-height: 100%;max-height: 100%"
         >
-          <v-card-title class="main-panel-title justify-center text-uppercase">
+          <v-card-title
+            class="main-panel-title justify-center text-uppercase"
+            :style="fontSize"
+          >
            {{ title }}
           </v-card-title>
         </v-img>
@@ -50,10 +53,21 @@ export default {
   methods: {
     navigate() {
       if (this.destination) {
-        this.$router.push(this.destination);
+        this.$router.push({ name: this.destination });
       } else {
-        console.error('Destination prop not set');
+        window.eventBus.$emit('snackMsg', { type: 'W', msg: 'Still under construction' });
       }
+    },
+  },
+  computed: {
+    fontSize() {
+      if (this.$vuetify.breakpoint.xs) {
+        return 'font-size: 2em';
+      }
+      if (this.$vuetify.breakpoint.lg) {
+        return 'font-size: 3em';
+      }
+      return 'font-size: 4em';
     },
   },
 };
@@ -62,7 +76,6 @@ export default {
 <style scoped>
 .main-panel-title {
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 4em;
   outline-style: double;
   outline-color: black;
 }

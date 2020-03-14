@@ -5,7 +5,14 @@
       target="_blank"
       icon
     >
-    <v-icon>mdi-github-circle</v-icon>
+      <v-icon>mdi-github</v-icon>
+    </v-btn>
+    <v-btn
+      href="https://www.linkedin.com/in/andreas-stensig-jensen-46784972/"
+      target="_blank"
+      icon
+    >
+      <v-icon>mdi-linkedin</v-icon>
     </v-btn>
     <v-btn
       href="https://twitter.com/denDAY04"
@@ -13,13 +20,6 @@
       icon
     >
       <v-icon>mdi-twitter</v-icon>
-    </v-btn>
-    <v-btn
-      href="https://www.linkedin.com/in/andreas-stensig-jensen-46784972/"
-      target="_blank"
-      icon
-    >
-      <v-icon>mdi-linkedin-box</v-icon>
     </v-btn>
   </span>
 </template>
