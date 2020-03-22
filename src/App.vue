@@ -65,6 +65,7 @@ export default {
   },
   mounted() {
     window.eventBus.$on('message', (msgEvent) => this.displaySnackMsg(msgEvent));
+    document.title = 'stensig.net';
   },
   data() {
     return {
