@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build & move CNAME dist",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build & push-dir --dir=dist --branch=master"
+    "deploy": "npm run build & copy CNAME dist & push-dir --dir=dist --branch=master"
   },
   "dependencies": {
     "@mdi/font": "^4.9.95",
