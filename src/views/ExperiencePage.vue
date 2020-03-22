@@ -91,8 +91,7 @@ export default {
       });
       vm.updateTimeline();
     }).catch((error) => {
-      console.error(error);
-      window.eventBus.$emit('message', { type: 'E', msg: 'Could not retrieve data' });
+      window.eventBus.$emit('message', { type: 'E', msg: `Error: ${error}` });
     });
   },
   methods: {
