@@ -64,7 +64,7 @@ export default {
     },
   },
   mounted() {
-    window.eventBus.$on('snackMsg', (msgEvent) => this.displaySnackMsg(msgEvent));
+    window.eventBus.$on('message', (msgEvent) => this.displaySnackMsg(msgEvent));
   },
   data() {
     return {
@@ -80,5 +80,8 @@ export default {
 </script>
 
 <style>
-
+.area-title {
+  font-family: Candara,sans-serif;
+  font-weight: 400;
+}
 </style>

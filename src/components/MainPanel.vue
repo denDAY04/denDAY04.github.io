@@ -19,7 +19,7 @@
           <v-overlay
             v-if="hover"
             absolute
-            color="#036358"
+            color="blue-grey darken-4"
             opacity="0.95"
           >
             {{ description }}
@@ -55,7 +55,7 @@ export default {
       if (this.destination) {
         this.$router.push({ name: this.destination });
       } else {
-        window.eventBus.$emit('snackMsg', { type: 'W', msg: 'Still under construction' });
+        window.eventBus.$emit('message', { type: 'W', msg: 'Still under construction' });
       }
     },
   },
