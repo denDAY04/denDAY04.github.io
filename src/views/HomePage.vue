@@ -9,7 +9,7 @@
           title="Experience"
           backgroundImg="/img/books.jpg"
           description="Timeline of my employments, educations, and other professional courses"
-          destination="Exp"
+          destination="ExpPage"
         />
       </v-col>
       <v-col lg="4" md="12" cols="12">
@@ -17,6 +17,7 @@
           title="Projects"
           backgroundImg="/img/code.jpg"
           description="Explore the projects I have worked on - professionally and as hobbies"
+          destination="ProjectsPage"
         />
       </v-col>
       <v-col lg="4" md="12" cols="12">

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import ExperiencePage from '../views/ExperiencePage.vue';
 import HomePage from '../views/HomePage.vue';
+import ProjectsPage from '../views/ProjectsPage.vue';
 
 Vue.use(Router);
 
@@ -14,8 +15,13 @@ export default new Router({
     },
     {
       path: '/experience',
-      name: 'Exp',
+      name: 'ExpPage',
       component: ExperiencePage,
+    },
+    {
+      path: '/projects',
+      name: 'ProjectsPage',
+      component: ProjectsPage,
     },
   ],
 });

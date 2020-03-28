@@ -56,9 +56,10 @@ export default {
           break;
         case 'E':
           this.snackColor = 'red darken-3';
+          console.error(this.snackMsg);
           break;
         default:
-          this.snackColor = 'purple darken-4';
+          this.snackColor = 'deep-purple accent-2';
       }
       this.showSnackMsg = true;
     },

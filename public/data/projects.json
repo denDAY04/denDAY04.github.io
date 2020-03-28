@@ -1,0 +1,14 @@
+[
+  {
+    "title": "EG: Kommunernes Ydelsessystem (KY)",
+    "description": "Missing description",
+    "skills": ["Java", "Spring Framework", "Microservice architecture", "REST API", "IBM DB2", "Domain Driven Design (DDD)"],
+    "affiliate": "IT Minds"
+  },
+  {
+    "title": "Tia Technology: Insurance platform",
+    "description": "Missing description",
+    "skills": ["Java", "Spring Framework", "Microservice architecture", "REST API", "Oracle DB", "Domain Driven Design (DDD)"],
+    "affiliate": "IT Minds"
+  }
+]
