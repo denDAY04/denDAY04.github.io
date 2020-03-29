@@ -11,7 +11,7 @@
         <v-combobox
           v-model="skillsQuery"
           :items="skillsList"
-          label="Filter projects with skills"
+          label="Filter projects by skills"
           multiple
           clearable
           chips
@@ -25,11 +25,20 @@
           :key="project.title"
           class="skill-card"
         >
-          <v-card-title>{{ project.title }}</v-card-title>
-          <v-card-subtitle>{{ project.affiliate }} project</v-card-subtitle>
+          <v-card-title class="blue-grey darken-4">{{ project.title }}</v-card-title>
+          <v-card-subtitle class="project-affiliate">
+            {{ project.affiliate }} project
+          </v-card-subtitle>
           <v-card-text>
             {{ project.description}}
           </v-card-text>
+          <v-card-actions>
+            <v-item-group>
+              <v-item class="project-link" v-for="link in project.links" :key="link.label">
+                <a :href="link.href" target="_blank">{{ link.label }}</a>
+              </v-item>
+            </v-item-group>
+          </v-card-actions>
           <v-divider/>
           <v-card-actions>
             <div class="text-uppercase skills">Skills:</div>
@@ -134,5 +143,11 @@ export default {
 }
 .skills {
   margin-right: 1em;
+}
+.project-link {
+  margin-left: 1em;
+}
+.project-affiliate {
+  margin-top: 1em;
 }
 </style>

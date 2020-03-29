@@ -1,14 +1,102 @@
 [
   {
-    "title": "EG: Kommunernes Ydelsessystem (KY)",
+    "title": "EG: Municipal Economic Benefits Platform",
     "description": "Missing description",
-    "skills": ["Java", "Spring Framework", "Microservice architecture", "REST API", "IBM DB2", "Domain Driven Design (DDD)"],
+    "skills": ["Java", "Spring Framework", "Maven", "Hibernate", "Backbone.js", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "IBM DB2", "Domain Driven Design (DDD)"],
     "affiliate": "IT Minds"
   },
   {
-    "title": "Tia Technology: Insurance platform",
+    "title": "Tia Technology: Digital Insurance Platform",
     "description": "Missing description",
-    "skills": ["Java", "Spring Framework", "Microservice architecture", "REST API", "Oracle DB", "Domain Driven Design (DDD)"],
+    "skills": ["Java", "Spring Framework", "Maven", "Hibernate", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "Oracle DB", "Docker", "Domain Driven Design (DDD)", "Amazon Web Services (AWS)"],
+    "affiliate": "IT Minds",
+    "links": [
+      {
+        "label": "Homepage",
+        "href": "https://tiatechnology.com/solutions/"
+      }
+    ]
+  },
+  {
+    "title": "Optimise: File Management Platform",
+    "description": "Missing description",
+    "skills": ["Java", "Spring Framework", "Gradle", "Hibernate", "Angular.js", "Team lead", "System architect", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "MySQL", "Amazon Web Services (AWS)"],
+    "affiliate": "IT Minds",
+    "links": [
+      {
+        "label": "Homepage",
+        "href": "https://www.optimise-locate.com/en/"
+      }
+    ]
+  },
+  {
+    "title": "XMedicus: General Practitioner Platform",
+    "description": "Missing description",
+    "skills": ["C#", ".NET Core", "ASP.NET MVC", "PostgreSQL", "NuGet", "Docker"],
+    "affiliate": "IT Minds",
+    "links": [
+      {
+        "label": "Homepage",
+        "href": "https://www.xmedicus.com/en/Products/XMedicus"
+      }
+    ]
+  },
+  {
+    "title": "DPOWare: GDPR Compliance Platform",
+    "description": "Missing description",
+    "skills": ["Java", "Spring Framework", "EclipseLink", "Vaadin", "MySQL", "Amazon Web Services (AWS)"],
+    "affiliate": "IT Minds",
+    "links": [
+      {
+        "label": "Homepage",
+        "href": "https://dpoware.com/"
+      }
+    ]
+  },
+  {
+    "title": "Taxinævnet: Administrative Platform",
+    "description": "Missing description",
+    "skills": ["C#", ".NET Core", "ASP.NET MVC", "Microsoft SQL", "jQuery"],
     "affiliate": "IT Minds"
+  },
+  {
+    "title": "Maersk Oil Trading: Batch System",
+    "description": "Missing description",
+    "skills": ["C++", "ODBC", "Microsoft SQL"],
+    "affiliate": "IT Minds"
+  },
+  {
+    "title": "Maersk Oil Trading: Resource Management Application",
+    "description": "Missing description",
+    "skills": ["C++", "Microsoft Access", "ActiveX Data Objects (ADO)", "Visual Component Library (VCL)"],
+    "affiliate": "IT Minds"
+  },
+  {
+    "title": "MSc.Eng Thesis: A Peer-Based Distributed Password Manager",
+    "description": "Missing description",
+    "skills": ["Java", "Maven", "Cryptography"],
+    "affiliate": "Education",
+    "links": [
+      {
+        "label": "Report",
+        "href": "/documents/thesis.pdf"
+      },
+      {
+        "label": "Codebase",
+        "href": "https://github.com/denDAY04/thesis-code"
+      }
+    ]
+  },
+  {
+    "title": "B.Eng Project: Clothing Web-Application",
+    "description": "Missing description",
+    "skills": ["C#", ".NET Framework", "ASP.NET MVC"],
+    "affiliate": "Education",
+    "links": [
+      {
+        "label": "Report",
+        "href": "/documents/CloseFit.pdf"
+      }
+    ]
   }
 ]
