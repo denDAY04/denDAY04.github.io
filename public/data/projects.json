@@ -1,15 +1,17 @@
 [
   {
     "title": "EG: Municipal Economic Benefits Platform",
-    "description": "Missing description",
-    "skills": ["Java", "Spring Framework", "Maven", "Hibernate", "Backbone.js", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "IBM DB2", "Domain Driven Design (DDD)"],
-    "affiliate": "IT Minds"
+    "description": "A large-scale microservice web-platform offering municipal services regarding requesting, managing, and analysing economic benefit packages offered by the national government to private individuals. The services had a large focus on integrations to other third-party services e.g. taxation systems in order to satisfy their domain functionality. The agile development process included a team of developers (10+), UX designers, testers, and veteran domain experts.",
+    "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Backbone.js", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "IBM DB2", "Domain Driven Design (DDD)"],
+    "affiliate": "IT Minds - consultant",
+    "role": ["Full-stack developer"]
   },
   {
     "title": "Tia Technology: Digital Insurance Platform",
-    "description": "Missing description",
-    "skills": ["Java", "Spring Framework", "Maven", "Hibernate", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "Oracle DB", "Docker", "Domain Driven Design (DDD)", "Amazon Web Services (AWS)"],
-    "affiliate": "IT Minds",
+    "description": "A web-platform utilising microservices and microfrontends to build a dynamic platform for exposing different sub-domains within a general insurance domain, both for customer self-service and company processes. The platform functioned as a separate system integrating with an existing enterprise exposing the core domain features. The Agile development process consisted of a handful of developers and a few UX designers.",
+    "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "Oracle DB", "Docker", "Domain Driven Design (DDD)", "Amazon Web Services (AWS)"],
+    "affiliate": "IT Minds - consultant",
+    "role": ["Back-end developer"],
     "links": [
       {
         "label": "Homepage",
@@ -19,9 +21,10 @@
   },
   {
     "title": "Optimise: File Management Platform",
-    "description": "Missing description",
-    "skills": ["Java", "Spring Framework", "Gradle", "Hibernate", "Angular.js", "Team lead", "System architect", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "MySQL", "Amazon Web Services (AWS)"],
-    "affiliate": "IT Minds",
+    "description": "A web-application facilitating advanced file hosting and management within the domain of construction projects and their complex needs for advanced archive rules, presentation of different document types, and authorization based on user profession. The agile process centered around an out-sourced developer team in India and Poland, with the technical team lead and project management located on-site in Denmark. This project was started after the development cycle had already been on-going for some time and needed better and more streamlined coordination.",
+    "skills": ["Agile", "Java", "Spring Framework", "Gradle", "Hibernate", "Angular.js", "Team lead", "System architect", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "MySQL", "Amazon Web Services (AWS)"],
+    "affiliate": "IT Minds - consultant",
+    "role": ["System architect", "Team lead", "Software engineer"],
     "links": [
       {
         "label": "Homepage",
@@ -31,9 +34,10 @@
   },
   {
     "title": "XMedicus: General Practitioner Platform",
-    "description": "Missing description",
+    "description": "A web-application for general practitioners and their clients, enabling asynchronous communication between the parties, and handing general coordination with meetings, receipts etc. The project consisted of further development on the existing system, expanding its features and bug fixing.",
     "skills": ["C#", ".NET Core", "ASP.NET MVC", "PostgreSQL", "NuGet", "Docker"],
-    "affiliate": "IT Minds",
+    "affiliate": "IT Minds - consultant",
+    "role": ["Full-stack developer"],
     "links": [
       {
         "label": "Homepage",
@@ -43,9 +47,10 @@
   },
   {
     "title": "DPOWare: GDPR Compliance Platform",
-    "description": "Missing description",
+    "description": "A web-application for companies to manage, monitor, and document their GDPR compliance through workflows, checklists, reminders etc. The project constituted the initial release phase of the application, from conception to development and release. The project was developed by a couple of developers with close contact to the stakeholders, which served as the domain experts.",
     "skills": ["Java", "Spring Framework", "EclipseLink", "Vaadin", "MySQL", "Amazon Web Services (AWS)"],
-    "affiliate": "IT Minds",
+    "affiliate": "IT Minds - consultant",
+    "role": ["Full-stack developer"],
     "links": [
       {
         "label": "Homepage",
@@ -55,27 +60,31 @@
   },
   {
     "title": "Taxinævnet: Administrative Platform",
-    "description": "Missing description",
+    "description": "A simple CRUD web-application for a company to manage their taxi driver's license information.",
     "skills": ["C#", ".NET Core", "ASP.NET MVC", "Microsoft SQL", "jQuery"],
-    "affiliate": "IT Minds"
+    "affiliate": "IT Minds - consultant",
+    "role": ["Full-stack developer"]
   },
   {
     "title": "Maersk Oil Trading: Batch System",
-    "description": "Missing description",
+    "description": "A small asynchronous batch program handling periodic data-synchronisation between different data sources.",
     "skills": ["C++", "ODBC", "Microsoft SQL"],
-    "affiliate": "IT Minds"
+    "affiliate": "IT Minds - consultant",
+    "role": ["Software engineer"]
   },
   {
     "title": "Maersk Oil Trading: Resource Management Application",
-    "description": "Missing description",
+    "description": "This project focused on expanding the features of an existing (internally) mass-deployed desktop application handling resource management and analysis.",
     "skills": ["C++", "Microsoft Access", "ActiveX Data Objects (ADO)", "Visual Component Library (VCL)"],
-    "affiliate": "IT Minds"
+    "affiliate": "IT Minds - consultant",
+    "role": ["Software engineer"]
   },
   {
     "title": "MSc.Eng Thesis: A Peer-Based Distributed Password Manager",
-    "description": "Missing description",
+    "description": "Master's thesis application in the form of a password manager with added security through the use of true data fragmentation distribution in a peer-network, decentralizing the application's secret data.",
     "skills": ["Java", "Maven", "Cryptography"],
     "affiliate": "Education",
+    "role": ["Software engineer"],
     "links": [
       {
         "label": "Report",
@@ -89,9 +98,10 @@
   },
   {
     "title": "B.Eng Project: Clothing Web-Application",
-    "description": "Missing description",
+    "description": "Simple CRUD web-application, designed and implemented as part of the product for my Bachelor of Engineering project. The business functionality centered around using primitive statistical analysis of user's clothing sizes across different brands, in order to propose possible fitting sizes in new brands as of yet un-used by the user.",
     "skills": ["C#", ".NET Framework", "ASP.NET MVC"],
     "affiliate": "Education",
+    "role": ["Software engineer"],
     "links": [
       {
         "label": "Report",

@@ -32,8 +32,11 @@
           <v-card-text>
             {{ project.description}}
           </v-card-text>
-          <v-card-actions>
+          <v-card-actions v-if="project.links !== undefined" class="project-links">
             <v-item-group>
+              <v-item>
+                <v-icon class="project-link">mdi-link</v-icon>
+              </v-item>
               <v-item class="project-link" v-for="link in project.links" :key="link.label">
                 <a :href="link.href" target="_blank">{{ link.label }}</a>
               </v-item>
@@ -41,7 +44,12 @@
           </v-card-actions>
           <v-divider/>
           <v-card-actions>
-            <div class="text-uppercase skills">Skills:</div>
+            <div class="text-uppercase skills">Role</div>
+            <span class="font-italic">{{ printRoles(project.role) }}</span>
+          </v-card-actions>
+          <v-divider/>
+          <v-card-actions>
+            <div class="text-uppercase skills">Skills</div>
             <v-chip-group column>
               <v-chip
                 v-for="skill in project.skills"
@@ -84,6 +92,7 @@ export default {
 
       vm.projects.forEach((p) => {
         p.skills.sort();
+        p.role.sort();
         p.skills.forEach((s) => {
           if (vm.skillProjectsMap[s] === undefined) {
             vm.skillsList.push(s);
@@ -133,6 +142,18 @@ export default {
         window.eventBus.$emit('message', { type: 'I', msg: 'Already filtering on this skill' });
       }
     },
+    printRoles(roleList) {
+      const it = roleList[Symbol.iterator]();
+      let role = it.next();
+      let text = role.value;
+      role = it.next();
+      while (!role.done) {
+        text += ' -- ';
+        text += role.value;
+        role = it.next();
+      }
+      return text;
+    },
   },
 };
 </script>
@@ -149,5 +170,8 @@ export default {
 }
 .project-affiliate {
   margin-top: 1em;
+}
+.project-links {
+  margin-top: -1em;
 }
 </style>
