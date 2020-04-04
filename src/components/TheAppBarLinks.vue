@@ -1,6 +1,12 @@
 <template>
   <span>
     <v-btn
+      href="mailto:stensig04@gmail.com"
+      icon
+    >
+      <v-icon>mdi-email</v-icon>
+    </v-btn>
+    <v-btn
       href="https://github.com/denDAY04"
       target="_blank"
       icon
