@@ -56,7 +56,6 @@ export default {
           break;
         case 'E':
           this.snackColor = 'red darken-3';
-          console.error(this.snackMsg);
           break;
         default:
           this.snackColor = 'deep-purple accent-2';
@@ -81,6 +80,7 @@ export default {
 };
 </script>
 
+<!--suppress CssUnusedSymbol -->
 <style>
 .area-title {
   font-family: Candara,sans-serif;

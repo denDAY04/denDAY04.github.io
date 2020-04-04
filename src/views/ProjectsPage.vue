@@ -121,8 +121,6 @@ export default {
     filterSkills() {
       const vm = this;
       vm.filteredProjectKeys = [];
-      console.log('Filtering skills');
-      console.log(vm.skillsQuery);
       vm.skillsQuery.forEach((skill) => {
         if (vm.skillProjectsMap[skill] !== undefined) {
           vm.skillProjectsMap[skill].forEach((projectTitle) => {
