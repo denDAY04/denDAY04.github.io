@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy_windows": "npm run build & copy CNAME dist & push-dir --dir=dist --branch=master",
-    "deploy_linux": "npm run build && cp CNAME dist"
+    "deploy_linux": "npm run build && cp CNAME dist && push-dir --dir=dist --branch=master"
   },
   "dependencies": {
     "@mdi/font": "^4.9.95",
