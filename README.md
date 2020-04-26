@@ -1,5 +1,5 @@
 # Personal website
-
+![Build development](https://github.com/denDAY04/denday04.github.io/workflows/Build%20development/badge.svg)
 > Hosted using github pages
 
 ## Tools
