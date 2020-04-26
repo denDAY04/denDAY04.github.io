@@ -42,3 +42,6 @@ jobs:
 
     - name: Build and deploy
       run: npm run deploy_linux
+
+    - name: Verify CNAME copy
+      run: ls dist
