@@ -5,7 +5,7 @@ name: Deploy
 
 on:
   release: 
-    types: [ created, edited, unpublished ]
+    types: [ published ]
 
 jobs:
   deploy:
@@ -23,37 +23,31 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-#    - name: Cache node modules
-#      uses: actions/cache@v1
-#      env:
-#        cache-name: cache-node-modules
-#      with:
-#        path: ~/.npm
-#        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-#        restore-keys: |
-#          ${{ runner.os }}-build-${{ env.cache-name }}-
-#          ${{ runner.os }}-build-
-#          ${{ runner.os }}-
-#    - name: Install dependencies
-#      run: npm ci
+    - name: Cache node modules
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+    - name: Install dependencies
+      run: npm ci
 
-#    - name: Build
-#      run: npm run build
+    - name: Build
+      run: npm run build
 
-    - name: Echo tag name
-      run: echo ::debug::${{ github.event.release.tag_name }}
-
-    - name: Echo event
-      run: echo ::debug::${{ github.event.release}}
-
-#    - name: Deploy
-#      uses: peaceiris/actions-gh-pages@v3
-#      with:
-#        github_token: ${{ secrets.GITHUB_TOKEN }}
-#        publish_dir: ./dist
-#        publish_branch: master
-#        cname: stensig.net      # instead of manually copying a CNAME file into dist before publishing
-#        force_orphan: true      # don't keep history of publish commits on branch - only keep latest
-#        commit_message: ${{ github.event.tag_name }}                # commit message from release tag
-#        user_name: 'github-actions[bot]'                            # display bot author instead of actual
-#        user_email: 'github-actions[bot]@users.noreply.github.com'  # display bot author instead of actual
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        publish_branch: master
+        cname: stensig.net      # instead of manually copying a CNAME file into dist before publishing
+        force_orphan: true      # don't keep history of publish commits on branch - only keep latest
+        commit_message: ${{ github.event.release.tag_name }}        # commit message from release tag
+        user_name: 'github-actions[bot]'                            # display bot author instead of actual
+        user_email: 'github-actions[bot]@users.noreply.github.com'  # display bot author instead of actual
