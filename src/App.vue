@@ -12,6 +12,7 @@
       :timeout="snackTimeout"
       v-model="showSnackMsg"
       :color="snackColor"
+      top
     >
       {{ snackMsg }}
       <v-btn @click.native="showSnackMsg = false">Close</v-btn>
@@ -74,7 +75,7 @@ export default {
       showSnackMsg: false,
       snackMsg: '',
       snackColor: '',
-      snackTimeout: 4000,
+      snackTimeout: 3000,
     };
   },
 };
@@ -82,8 +83,11 @@ export default {
 
 <!--suppress CssUnusedSymbol -->
 <style>
-.area-title {
-  font-family: Candara,sans-serif;
-  font-weight: 400;
-}
+  .area-title {
+    font-family: Candara,sans-serif;
+    font-weight: 400;
+  }
+  .clickable:hover {
+    cursor: pointer;
+  }
 </style>
