@@ -40,6 +40,12 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Echo tag name
+      run: echo ${{ github.event.tag_name }}
+
+    - name: Ehco event
+      run: echo ${{ github.event }}
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -48,6 +54,6 @@ jobs:
         publish_branch: master
         cname: stensig.net      # instead of manually copying a CNAME file into dist before publishing
         force_orphan: true      # don't keep history of publish commits on branch - only keep latest
-        commit_message: ${{ github.event.tag_name }}
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: ${{ github.event.tag_name }}                # commit message from release tag
+        user_name: 'github-actions[bot]'                            # display bot author instead of actual
+        user_email: 'github-actions[bot]@users.noreply.github.com'  # display bot author instead of actual
