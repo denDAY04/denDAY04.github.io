@@ -6,8 +6,8 @@ name: Deploy
 on:
 #  release:
 #    types: [ published ]
-  push:
-    branches: [ development ]
+  release:
+    types: [ created, edited ]
 
 jobs:
   deploy:
