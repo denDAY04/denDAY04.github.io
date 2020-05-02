@@ -90,4 +90,8 @@ export default {
   .clickable:hover {
     cursor: pointer;
   }
+  .border {
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+  }
 </style>

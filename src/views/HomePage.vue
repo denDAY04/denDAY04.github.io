@@ -89,8 +89,7 @@ export default {
       this.$router.push({ name: page.target });
     },
     gotoAboutMe() {
-      // todo implement about me page (issue#5)
-      window.eventBus.$emit('message', { type: 'W', msg: 'Under construction' });
+      this.$router.push({ name: 'AboutMePage' });
     },
   },
   computed: {
@@ -112,9 +111,5 @@ export default {
     font-family: "Arial Black", Gadget, sans-serif;
     color: lavender;
     text-shadow: 2px 2px 2px black;
-  }
-  .border {
-    border: 3px solid darkslategrey;
-    border-radius: 10px;
   }
 </style>
