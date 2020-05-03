@@ -5,16 +5,20 @@
         <v-card-title class="justify-center text-uppercase">
           <h1 class="area-title">About Me</h1>
         </v-card-title>
+        <hr>
         <v-card-text>
           <v-row align="center" class="mx-2" >
             <v-col cols="4">
-              <v-img max-height="300" src="img/asj2.jpg" class="border"/>
+              <v-img eager max-height="300" src="img/asj2.jpg" class="border"
+                     ref="andreas stensig jensen"
+              />
             </v-col>
             <v-col cols="8">
               <h2 class="mb-3">Andreas Stensig Jensen</h2>
               <p>
                 My name is Andreas Stensig Jensen, and I am a {{ this.age }} year old software
-                engineer; graduate of the Technical University of Denmark.
+                engineer; graduate of the
+                <a href="https://www.dtu.dk/english" target="_blank">Technical University of Denmark</a>.
               </p>
               <p>
                 I  was born and raised in Slagelse, Denmark, and am currently living near the Danish
@@ -22,9 +26,14 @@
                 with my girlfriend.
               </p>
               <p>
-                In my childhood home I grew up with both my parents and two older sisters, and have
+                I grew up with both my parents and two older sisters, and have
                 been used to having dogs in the home all throughout my childhood years. Hence, my
                 love for animals.
+              </p>
+              <p>
+                I would classify myself as slightly introverted, but once I know people I enjoy
+                their company, and I love sharing knowledge and having well-informed discussions.
+                I also find satisfaction in problem-solving.
               </p>
             </v-col>
           </v-row>
@@ -52,16 +61,36 @@
               </p>
             </v-col>
             <v-col cols="4">
-              <v-img contain max-height="300" src="img/dtu-diplom.jpg" class="border"/>
+              <v-img eager contain max-height="300" src="img/dtu-diplom.jpg" class="border"
+                     alt="Bachelor of IT engineering graduation"
+              />
             </v-col>
           </v-row>
           <v-row align="center" class="mx-2">
             <v-col cols="4">
-              <v-img max-height="300" src="img/jrrtolkien.jpg" class="border"/>
+              <v-img eager max-height="300" src="img/jrrtolkien.jpg" class="border"
+                     alt="Tolkien book collection"
+              />
             </v-col>
             <v-col cols="8">
-              <h2>Hobbies</h2>
-              <p>What do I spend my spare-time on?</p>
+              <h2 class="mb-3">Hobbies</h2>
+              <p>
+                Ever since high-school, computers, and technology has been a big hobby
+                of mine, and many hours have been spend on playing videos games and watching many
+                different documentaries. I also make frequent use of different streaming services
+                to follow major tech channels and their news outlets.
+              </p>
+              <p>
+                Yet my biggest hobby is my fandom for J.R.R. Tolkien and his mythology evolving
+                around Middle-Earth (of which Lord of the Rings and The Hobbit are part). I consider
+                myself a massive fan, with my knowledge and interest going far beyond Lord of the
+                Rings and even The Silmarillion; going so far as to find great insight in the
+                literature research aspects of his unfinished works.
+              </p>
+              <p>
+                I am also a pasionate lover of wine and craft beer, but more so do I enjoy a good
+                glass of whisk(e)y, of which I have a steadily growing collection.
+              </p>
             </v-col>
           </v-row>
         </v-card-text>
