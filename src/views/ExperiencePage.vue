@@ -58,6 +58,16 @@
               <v-card-text style="margin-top: 1em">
                 {{ exp.description }}
               </v-card-text>
+              <v-card-actions v-if="hasAttachments(exp)" class="mt-n3">
+                <v-btn
+                  v-for="att in exp.attachments" :key="att.label"
+                  color="teal lighten-2"
+                  @click="openAttachment(att)"
+                  text
+                >
+                  {{ att.label }}
+                </v-btn>
+              </v-card-actions>
             </v-card>
           </v-timeline-item>
         </v-timeline>
@@ -129,6 +139,12 @@ export default {
           vm.experiences.push(exp);
         }
       });
+    },
+    openAttachment(attachment) {
+      window.open(attachment.href, '_blank');
+    },
+    hasAttachments(experience) {
+      return experience.attachments !== undefined && experience.attachments.length > 0;
     },
   },
 };

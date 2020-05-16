@@ -1,21 +1,33 @@
 [
   {
-    "title": "Bachelor of Engineering [B.Eng]",
-    "description": "Graduation. Field: information technology. ",
+    "title": "Bachelor of Engineering",
+    "description": "Graduation - started degree in September 2013. Field of study: information technology, with a focus on web applications and system integration.",
     "company": "Technical University of Denmark",
     "companyLink": "https://www.dtu.dk/",
     "companyLogo": "/img/dtu.png",
     "date": "2017-03",
-    "type": "EDU"
+    "type": "EDU",
+    "attachments":  [
+      {
+        "href": "/documents/asj-bachelor-diploma-restricted.pdf",
+        "label": "Diploma"
+      }
+    ]
   },
   {
-    "title": "Master of Science in Engineering [MSc.Eng]",
-    "description": "Graduation. Field: Computer Science with a focus on system modeling and data security.",
+    "title": "Master of Science in Engineering",
+    "description": "Graduation - started in September 2017. Field of study: Computer science engineering, with a focus on domain modeling, system architecture, and data security.",
     "company": "Technical University of Denmark",
     "companyLink": "https://www.dtu.dk/",
     "companyLogo": "/img/dtu.png",
     "date": "2020-01",
-    "type": "EDU"
+    "type": "EDU",
+    "attachments":  [
+      {
+        "href": "/documents/asj-master-diploma-restricted.pdf",
+        "label": "Diploma"
+      }
+    ]
   },
   {
     "title": "Software Developer",
