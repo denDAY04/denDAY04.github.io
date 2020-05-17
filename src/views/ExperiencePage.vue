@@ -3,75 +3,52 @@
     <v-spacer/>
     <v-col cols="12" lg="8" md="12">
       <v-card>
-        <v-card-title class="justify-center text-uppercase">
-          <h1 class="area-title">Experience</h1>
+        <v-card-title class="justify-center text-uppercase primary">
+          <h1 class="area-title white--text">Experience</h1>
         </v-card-title>
       </v-card>
-      <v-card-text>
-        <v-row>
-          <v-switch
-            @change="updateTimeline"
-            v-model="showEMP"
-            label="Employments"
-            style="margin-right: 1em"
+      <v-row>
+        <v-switch
+          @change="updateTimeline"
+          v-model="showEMP"
+          label="Employment"
+          prepend-icon="mdi-account-tie-outline"
+          class="mr-10"
+        />
+        <v-switch
+          @change="updateTimeline"
+          v-model="showEDU"
+          label="Education"
+          prepend-icon="mdi-school-outline"
+          class="mr-10"
+        />
+        <v-switch
+          @change="updateTimeline"
+          v-model="showCC"
+          label="Certificate courses"
+          prepend-icon="mdi-certificate-outline"
+          class="mr-10"
+        />
+      </v-row>
+      <v-timeline>
+        <v-timeline-item
+          v-for="exp in experiences"
+          :key="exp.date + exp.title"
+          color="primaryLight"
+          large
+          fill-dot
+        >
+            <span slot="opposite" class="headline">
+              {{ exp.date | dateFormat }}
+            </span>
+          <span
+            slot="icon"
+            :title="getTypeDescription(exp.type)"
+            :class="'v-icon notranslate mdi ' + getTypeIcon(exp.type)"
           />
-          <v-switch
-            @change="updateTimeline"
-            v-model="showEDU"
-            label="Educations"
-            style="margin-right: 1em"
-          />
-          <v-switch
-            @change="updateTimeline"
-            v-model="showCC"
-            label="Certificate courses"
-          />
-        </v-row>
-        <v-timeline>
-          <v-timeline-item
-            v-for="exp in experiences"
-            :key="exp.date + exp.title"
-            color="deep-purple accent-2"
-            large
-            fill-dot
-          >
-            <span slot="opposite">{{ exp.date | dateFormat }}</span>
-            <span
-              slot="icon"
-              :title="getTypeDescription(exp.type)"
-              :class="'v-icon notranslate mdi theme--dark ' + getTypeIcon(exp.type)"
-            />
-            <v-card>
-              <v-card-title class="blue-grey darken-4">
-                <h3 class="title font-weight-light grow">{{ exp.title }}</h3>
-                <a :href="exp.companyLink" target="_blank">
-                  <v-avatar tile>
-                    <v-img
-                      :src="exp.companyLogo"
-                      class="exp-company-logo"
-                      :title="exp.company"
-                      contain
-                    />
-                  </v-avatar>
-                </a>
-              </v-card-title>
-              <v-card-text style="margin-top: 1em">
-                {{ exp.description }}
-              </v-card-text>
-              <v-card-actions v-if="hasAttachments(exp)" class="mt-n3">
-                <v-btn
-                  v-for="att in exp.attachments" :key="att.label"
-                  color="teal lighten-2"
-                  @click="openAttachment(att)"
-                  text
-                >
-                  {{ att.label }}
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card-text>
+          <ExperienceItem :item="exp"/>
+        </v-timeline-item>
+      </v-timeline>
     </v-col>
     <v-spacer/>
   </v-row>
@@ -79,9 +56,11 @@
 
 <script>
 import axios from 'axios';
+import ExperienceItem from '../components/ExperienceItem.vue';
 
 export default {
   name: 'ExperiencePage',
+  components: { ExperienceItem },
   data() {
     return {
       experiences: [],
@@ -140,22 +119,10 @@ export default {
         }
       });
     },
-    openAttachment(attachment) {
-      window.open(attachment.href, '_blank');
-    },
-    hasAttachments(experience) {
-      return experience.attachments !== undefined && experience.attachments.length > 0;
-    },
   },
 };
 </script>
 
 <style scoped>
-.exp-company-logo {
-  margin-right: 1em;
-  margin-left: 1em;
-}
-.exp-company-logo:hover {
-  cursor: pointer;
-}
+
 </style>

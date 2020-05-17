@@ -90,4 +90,7 @@ export default {
   .clickable:hover {
     cursor: pointer;
   }
+  .link {
+    text-decoration: none;
+  }
 </style>
