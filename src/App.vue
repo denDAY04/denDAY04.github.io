@@ -84,6 +84,7 @@ export default {
 <!--suppress CssUnusedSymbol -->
 <style>
   .area-title {
+    color: white;
     font-family: Candara,sans-serif;
     font-weight: 400;
   }

@@ -99,7 +99,7 @@
   },
   {
     "title": "MSc.Eng Thesis: A Peer-Based Distributed Password Manager",
-    "description": "Master's thesis application in the form of a password manager with added security through the use of true data fragmentation distribution in a peer-network, decentralizing the application's secret data.",
+    "description": "An application developed as part of my master's thesis, in the form of a password manager with added security through the use of true data fragmentation distribution in a peer-network, decentralizing the application's secret data.",
     "skills": ["Java", "Maven", "Cryptography", "Data security", "Desktop"],
     "affiliate": "Education",
     "role": ["Software engineer"],

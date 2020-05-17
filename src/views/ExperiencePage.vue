@@ -4,7 +4,7 @@
     <v-col cols="12" lg="8" md="12">
       <v-card>
         <v-card-title class="justify-center text-uppercase primary">
-          <h1 class="area-title white--text">Experience</h1>
+          <h1 class="area-title">Experience</h1>
         </v-card-title>
       </v-card>
       <v-row>
