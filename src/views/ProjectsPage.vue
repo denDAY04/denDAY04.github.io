@@ -23,7 +23,13 @@
         />
       </v-card-text>
       <v-card-text>
-        <ProjectItem v-for="project in displayProjects" :item="project" :key="project.title" />
+        <ProjectItem v-for="project in displayProjects" :item="project" :key="project.title"/>
+        <div v-if="this.noProjects"
+             class="mt-12 text-center text-uppercase headline"
+             style="height: 100%; min-height: 100%;max-height: 100%"
+        >
+          No projects found
+        </div>
       </v-card-text>
     </v-col>
     <v-spacer/>
@@ -58,6 +64,10 @@ export default {
     window.eventBus.$on('skillFilter', vm.addQueryFilter);
   },
   computed: {
+    noProjects() {
+      const vm = this;
+      return vm.displayProjects === undefined || vm.displayProjects.length < 1;
+    },
     displayProjects() {
       const vm = this;
       if (vm.skillsQuery.length > 0) {
