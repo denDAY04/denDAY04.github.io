@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :style="{ background: $vuetify.theme.themes.light.background }">
     <TheNavBar/>
 
     <v-content>
@@ -53,13 +53,13 @@ export default {
       this.snackMsg = msgEvent.msg;
       switch (msgEvent.type) {
         case 'W':
-          this.snackColor = 'orange darken-3';
+          this.snackColor = 'warning';
           break;
         case 'E':
-          this.snackColor = 'red darken-3';
+          this.snackColor = 'error';
           break;
         default:
-          this.snackColor = 'deep-purple accent-2';
+          this.snackColor = 'info';
       }
       this.showSnackMsg = true;
     },
@@ -70,7 +70,7 @@ export default {
   },
   data() {
     return {
-      showWipDisclaimer: true,
+      showWipDisclaimer: false,
       showFeatureConstruction: false,
       showSnackMsg: false,
       snackMsg: '',
@@ -89,9 +89,5 @@ export default {
   }
   .clickable:hover {
     cursor: pointer;
-  }
-  .border {
-    border: 3px solid darkslategrey;
-    border-radius: 10px;
   }
 </style>

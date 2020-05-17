@@ -1,8 +1,8 @@
 <template>
-<v-footer app>
+<v-footer app color="primaryDark">
   <v-spacer/>
-  <span>
-    &copy; {{ year }} Andreas Stensig Jensen
+  <span class="white--text">
+    stensig.net &copy; {{ year }} Andreas Stensig
   </span>
   <v-spacer/>
 </v-footer>

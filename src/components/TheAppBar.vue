@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app>
+  <v-app-bar app color="primary">
     <TheAppBarTitle/>
     <v-spacer></v-spacer>
     <TheAppBarLinks/>

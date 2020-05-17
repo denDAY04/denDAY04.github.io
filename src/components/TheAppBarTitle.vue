@@ -5,7 +5,7 @@
         :to="{ name: 'Home' }"
         aria-label="Home"
         title="Home"
-        class="nav-bar-link"
+        class="nav-bar-link white--text"
       >
         stensig.net
       </router-link>
@@ -25,6 +25,5 @@ export default {
   }
   .nav-bar-link {
     text-decoration: none;
-    color: inherit;
   }
 </style>

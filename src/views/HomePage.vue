@@ -7,37 +7,38 @@
         </v-avatar>
         <v-list-item>
           <v-list-item-content>
-            <v-list-item-title class="title"> Andreas Stensig</v-list-item-title>
+            <v-list-item-title class="title">Andreas Stensig</v-list-item-title>
             <v-list-item-subtitle>
-              MSc in Engineering <ins title="Computer Science and Engineering">(CSE)</ins>
+              MSc in Engineering (<ins title="Computer Science and Engineering">CSE</ins>)
             </v-list-item-subtitle>
             <v-list-item-subtitle>
-              Bachelor of IT Engineering
+              Bachelor of Engineering (<ins title="Information Technology">IT</ins>)
             </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-col>
 
       <v-col cols="4">
-        <v-card raised>
+        <v-card raised color="backgroundLight">
           <v-card-title>Welcome to STENSIG.NET</v-card-title>
           <v-card-subtitle>
             <i>Portfolio of a Software Engineer</i>
           </v-card-subtitle>
           <v-card-text>
             <p>
-              On this website you can explore my professional experiences and significant projects
-              I have worked on. Click the banners below.
+              On this website you can explore my professional experiences and the significant
+              projects I have worked on. Simply click the banners below.
             </p>
             <p>
-              You can also found out more <a @click="gotoAboutMe()">about me</a>.
+              You can also found out more <a @click="gotoAboutMe()">
+              about me</a>.
             </p>
           </v-card-text>
         </v-card>
       </v-col>
 
       <v-col lg="8" md="12" cols="12">
-        <v-carousel height="400" cycle :show-arrows="showArrows" class="border">
+        <v-carousel height="400" cycle :show-arrows="showArrows" :style="border">
           <v-carousel-item v-for="(page, i) in pages" :key="i">
             <v-img height="100%" :src="backgroundImage(page)">
               <v-row
@@ -101,6 +102,9 @@ export default {
         return 'font-size: 3em';
       }
       return 'font-size: 4em';
+    },
+    border() {
+      return `border: 3px solid ${this.$vuetify.theme.themes.light.primary}; border-radius: 10px`;
     },
   },
 };
