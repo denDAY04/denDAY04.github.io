@@ -15,7 +15,9 @@
       top
     >
       {{ snackMsg }}
-      <v-btn @click.native="showSnackMsg = false">Close</v-btn>
+      <v-btn text @click.native="showSnackMsg = false">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
     </v-snackbar>
 
     <v-dialog v-model="showWipDisclaimer" max-width="400">

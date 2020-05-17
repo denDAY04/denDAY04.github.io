@@ -52,7 +52,7 @@ export default {
   computed: {
     roles() {
       const vm = this;
-      const it = vm.item.role[Symbol.iterator]();
+      const it = vm.item.roles[Symbol.iterator]();
       let role = it.next();
       let text = role.value;
       role = it.next();

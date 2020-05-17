@@ -1,5 +1,5 @@
 <template>
-<v-footer app color="primaryDark">
+<v-footer app color="blue-grey darken-2">
   <v-spacer/>
   <span class="white--text">
     stensig.net &copy; {{ year }} Andreas Stensig

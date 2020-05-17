@@ -41,7 +41,6 @@ export default {
     return {
       projects: [],
       skillsQuery: [],
-      skillProjectsMap: {},
       filteredProjectKeys: [],
       skillsList: [],
     };
@@ -50,7 +49,7 @@ export default {
     const vm = this;
     axios.get('data/projects.json').then((response) => {
       vm.projects = response.data.sort(vm.projectComparator).reverse();
-      vm.projects.forEach(vm.mapProjectSkills);
+      vm.projects.forEach(vm.processProject);
       vm.skillsList.sort();
     }).catch((error) => {
       window.eventBus.$emit('message', { type: 'E', msg: `Error: ${error}` });
@@ -70,16 +69,11 @@ export default {
   methods: {
     filterSkills() {
       const vm = this;
-      vm.filteredProjectKeys = [];
-      vm.skillsQuery.forEach((skill) => {
-        if (vm.skillProjectsMap[skill] !== undefined) {
-          vm.skillProjectsMap[skill].forEach((projectTitle) => {
-            if (!vm.filteredProjectKeys.includes(projectTitle)) {
-              vm.filteredProjectKeys.push(projectTitle);
-            }
-          });
-        }
-      });
+      vm.filteredProjectKeys = vm.projects.filter(vm.projectMatchesQuery).map((p) => p.title);
+    },
+    projectMatchesQuery(project) {
+      const vm = this;
+      return vm.skillsQuery.every((s) => project.skills.includes(s));
     },
     addQueryFilter(skill) {
       const vm = this;
@@ -99,16 +93,13 @@ export default {
 
       return 0;
     },
-    mapProjectSkills(project) {
+    processProject(project) {
       const vm = this;
+      project.roles.sort();
       project.skills.sort();
-      project.role.sort();
       project.skills.forEach((s) => {
-        if (vm.skillProjectsMap[s] === undefined) {
+        if (!vm.skillsList.includes(s)) {
           vm.skillsList.push(s);
-          vm.skillProjectsMap[s] = [project.title];
-        } else {
-          vm.skillProjectsMap[s].push(project.title);
         }
       });
     },

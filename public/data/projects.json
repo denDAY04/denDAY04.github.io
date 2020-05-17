@@ -4,7 +4,7 @@
     "description": "A large-scale microservice web-platform offering municipal services regarding requesting, managing, and analysing economic benefit packages offered by the national government to private individuals. The services had a large focus on integrations to other third-party services e.g. taxation systems in order to satisfy their domain functionality. The agile development process included a team of developers (10+), UX designers, testers, and veteran domain experts.",
     "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Backbone.js", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "IBM DB2", "Domain Driven Design (DDD)", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2016,
     "end": 2017
   },
@@ -13,7 +13,7 @@
     "description": "A web-platform utilising microservices and microfrontends to build a dynamic platform for exposing different sub-domains within a general insurance domain, both for customer self-service and company processes. The platform functioned as a separate system integrating with an existing enterprise exposing the core domain features. The Agile development process consisted of a handful of developers and a few UX designers.",
     "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "Oracle DB", "Docker", "Domain Driven Design (DDD)", "Amazon Web Services (AWS)", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2019,
     "links": [
       {
@@ -27,7 +27,7 @@
     "description": "A re-implementation of an existing large-scale person registry mainframe as a group of service-oriented Java web-applications. These systems were integrated as part of a larger application-stack overhaul, introducing Elasticsearch for analytics, Apache Kafka for decoupled event-driven communication with batch processes, and GraphQL for future-proofing the public API which was otherwise exposed with a proprietary stateful protocol. The applications integrated with an existing IBM DB2 database.",
     "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Service-oriented architecture", "Mainframe/NATURAL analysis", "IBM DB2", "Docker", "Domain Driven Design (DDD)", "Elasticsearch", "GraphQL", "Apache Kafka", "Batch", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2020
   },
   {
@@ -35,7 +35,7 @@
     "description": "A web-application facilitating advanced file hosting and management within the domain of construction projects and their complex needs for advanced archive rules, presentation of different document types, and authorization based on user profession. The agile process centered around an out-sourced developer team in India and Poland, with the technical team lead and project management located on-site in Denmark. This project was started after the development cycle had already been on-going for some time and needed better and more streamlined coordination.",
     "skills": ["Agile", "Java", "Spring Framework", "Gradle", "Hibernate", "Angular.js", "Team lead", "System architect", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "MySQL", "Amazon Web Services (AWS)", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["System architect", "Team lead", "Software engineer"],
+    "roles": ["System architect", "Team lead", "Software engineer"],
     "start": 2018,
     "end": 2019,
     "links": [
@@ -50,7 +50,7 @@
     "description": "A web-application for general practitioners and their clients, enabling asynchronous communication between the parties, and handing general coordination with meetings, receipts etc. The project consisted of further development on the existing system, expanding its features and bug fixing.",
     "skills": ["C#", ".NET Core", "ASP.NET MVC", "PostgreSQL", "NuGet", "Docker", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2018,
     "links": [
       {
@@ -64,7 +64,7 @@
     "description": "A web-application for companies to manage, monitor, and document their GDPR compliance through workflows, checklists, reminders etc. The project constituted the initial release phase of the application, from conception to development and release. The project was developed by a couple of developers with close contact to the stakeholders, which served as the domain experts.",
     "skills": ["Java", "Spring Framework", "EclipseLink", "Vaadin", "MySQL", "Amazon Web Services (AWS)", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2017,
     "links": [
       {
@@ -78,7 +78,7 @@
     "description": "A simple CRUD web-application for a company to manage their taxi driver's license information.",
     "skills": ["C#", ".NET Core", "ASP.NET MVC", "Microsoft SQL", "jQuery", "Web"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2016
   },
   {
@@ -86,7 +86,7 @@
     "description": "A small asynchronous batch program handling periodic data-synchronisation between different data sources.",
     "skills": ["C++", "ODBC", "Microsoft SQL", "Batch"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2016
   },
   {
@@ -94,7 +94,7 @@
     "description": "This project focused on expanding the features of an existing (internally) mass-deployed desktop application handling resource management and analysis.",
     "skills": ["C++", "Microsoft Access", "ActiveX Data Objects (ADO)", "Visual Component Library (VCL)", "Desktop"],
     "affiliate": "IT Minds - contractor",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2016
   },
   {
@@ -102,7 +102,7 @@
     "description": "An application developed as part of my master's thesis, in the form of a password manager with added security through the use of true data fragmentation distribution in a peer-network, decentralizing the application's secret data.",
     "skills": ["Java", "Maven", "Cryptography", "Data security", "Desktop"],
     "affiliate": "Education",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2020,
     "links": [
       {
@@ -120,7 +120,7 @@
     "description": "Simple CRUD web-application, designed and implemented as part of the product for my Bachelor of Engineering project. The business functionality centered around using primitive statistical analysis of user's clothing sizes across different brands, in order to propose possible fitting sizes in new brands as of yet un-used by the user.",
     "skills": ["C#", ".NET Framework", "ASP.NET MVC", "Web"],
     "affiliate": "Education",
-    "role": ["Software engineer"],
+    "roles": ["Software engineer"],
     "start": 2017,
     "links": [
       {
