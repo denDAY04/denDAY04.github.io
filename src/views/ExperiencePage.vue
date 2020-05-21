@@ -61,8 +61,32 @@ import ExperienceItem from '../components/ExperienceItem.vue';
 export default {
   name: 'ExperiencePage',
   components: { ExperienceItem },
+  metaInfo() {
+    return {
+      title: 'Experience',
+      link: [
+        { rel: 'canonical', href: this.metadata.url },
+      ],
+      meta: [
+        // OpenGraph data (Most widely used)
+        { property: 'og:title', content: this.metadata.title },
+        { property: 'og:url', content: this.metadata.url },
+
+        // Twitter card
+        { name: 'twitter:site', content: this.metadata.url },
+        { name: 'twitter:title', content: this.metadata.title },
+
+        // Google / Schema.org markup:
+        { itemprop: 'name', content: this.metadata.title },
+      ],
+    };
+  },
   data() {
     return {
+      metadata: {
+        title: 'Experience | Andreas Stensig portfolio',
+        url: `${process.env.VUE_APP_WEBSITE}${process.env.BASE_URL}#/experience`,
+      },
       experiences: [],
       fetchedExp: [],
       showEDU: true,

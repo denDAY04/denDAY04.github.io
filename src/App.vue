@@ -46,6 +46,37 @@ import TheFooter from './components/TheFooter.vue';
 
 export default {
   name: 'App',
+  metaInfo() {
+    return {
+      title: 'Welcome',
+      titleTemplate: `%s | ${process.env.VUE_APP_TITLE}`,
+      meta: [
+        { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' },
+        { 'http-equiv': 'content-type', content: 'text/html' },
+
+        { charset: 'utf-8' },
+
+        { name: 'viewport', content: 'width=device-width,initial-scale=1.0' },
+        { name: 'application-name', content: 'stensig.net' },
+        { name: 'author', content: 'Andreas Stensig' },
+        { name: 'keywords', content: 'portfolio, Andreas Stensig, Andreas Stensig Jensen, stensig, denDAY04, software engineering, DTU, Denmark, Danish' },
+        { name: 'description', content: this.metadata.description },
+
+        { property: 'og:image', content: this.metadata.image },
+        { property: 'og:site_name', content: 'stensig.net' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:description', content: this.metadata.description },
+
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:image:src', content: this.metadata.image },
+        { name: 'twitter:description', content: this.metadata.description },
+        { name: 'twitter:creator', content: '@denDAY04' },
+
+        { itemprop: 'image', content: this.metadata.image },
+        { itemprop: 'description', content: this.metadata.description },
+      ],
+    };
+  },
   components: {
     TheFooter,
     TheNavBar,
@@ -68,10 +99,13 @@ export default {
   },
   mounted() {
     window.eventBus.$on('message', (msgEvent) => this.displaySnackMsg(msgEvent));
-    document.title = 'stensig.net';
   },
   data() {
     return {
+      metadata: {
+        description: process.env.VUE_APP_DESC,
+        image: `${process.env.VUE_APP_WEBSITE}/${process.env.VUE_APP_IMAGE}`,
+      },
       showWipDisclaimer: false,
       showFeatureConstruction: false,
       showSnackMsg: false,

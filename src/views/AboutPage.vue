@@ -23,7 +23,7 @@
           </p>
           <p>
             I  was born and raised in Slagelse, Denmark, and am currently living near the Danish
-            capital of Copenhagen, in the suburb called Hvidovre, where I share my appartment
+            capital of Copenhagen, in the suburb called Hvidovre, where I share my apartment
             with my girlfriend.
           </p>
           <p>
@@ -40,7 +40,7 @@
       </v-row>
       <v-row align="center" class="mx-2">
         <v-col cols="8">
-          <h2 class="mb-3">Technology, engineering, science, & knowledge</h2>
+          <h2 class="mb-3">Technology, engineering, science & knowledge</h2>
           <p>
             I have had a keen interest in mathematics and the natural sciences ever since
             grade-school, and my passion for technology and engineering really came into being
@@ -89,7 +89,7 @@
             literature research aspects of his unfinished works.
           </p>
           <p>
-            I am also a pasionate lover of wine and craft beer, but more so do I enjoy a good
+            I am also an enthusiast of wine and craft beer, but more so do I enjoy a good
             glass of whisk(e)y, of which I have a steadily growing collection.
           </p>
         </v-col>
@@ -100,7 +100,35 @@
 
 <script>
 export default {
-  name: 'AboutMePage',
+  name: 'AboutPage',
+  metaInfo() {
+    return {
+      title: 'About',
+      link: [
+        { rel: 'canonical', href: this.metadata.url },
+      ],
+      meta: [
+        // OpenGraph data (Most widely used)
+        { property: 'og:title', content: this.metadata.title },
+        { property: 'og:url', content: this.metadata.url },
+
+        // Twitter card
+        { name: 'twitter:site', content: this.metadata.url },
+        { name: 'twitter:title', content: this.metadata.title },
+
+        // Google / Schema.org markup:
+        { itemprop: 'name', content: this.metadata.title },
+      ],
+    };
+  },
+  data() {
+    return {
+      metadata: {
+        title: 'About | Andreas Stensig portfolio',
+        url: `${process.env.VUE_APP_WEBSITE}${process.env.BASE_URL}#/about`,
+      },
+    };
+  },
   computed: {
     age() {
       const diff = new Date() - new Date(1993, 10, 4);

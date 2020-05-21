@@ -1,7 +1,9 @@
 import Vue from 'vue';
+import Meta from 'vue-meta';
 import App from './App.vue';
 import vuetify from './plugins/vuetify';
 import router from './router';
+
 
 Vue.config.productionTip = false;
 
@@ -57,6 +59,7 @@ Vue.filter('dateFormat', (date) => {
   }
   return `${monthString} ${year}`;
 });
+Vue.use(Meta);
 
 window.eventBus = new Vue();
 

@@ -65,8 +65,32 @@
 <script>
 export default {
   name: 'HomePage',
+  metaInfo() {
+    return {
+      title: 'Home',
+      link: [
+        { rel: 'canonical', href: this.metadata.url },
+      ],
+      meta: [
+        // OpenGraph data (Most widely used)
+        { property: 'og:title', content: this.metadata.title },
+        { property: 'og:url', content: this.metadata.url },
+
+        // Twitter card
+        { name: 'twitter:site', content: this.metadata.url },
+        { name: 'twitter:title', content: this.metadata.title },
+
+        // Google / Schema.org markup:
+        { itemprop: 'name', content: this.metadata.title },
+      ],
+    };
+  },
   data() {
     return {
+      metadata: {
+        title: 'Home | Andreas Stensig portfolio',
+        url: `${process.env.VUE_APP_WEBSITE}${process.env.BASE_URL}#/`,
+      },
       showArrows: false,
       pages: [
         {
@@ -90,7 +114,7 @@ export default {
       this.$router.push({ name: page.target });
     },
     gotoAboutMe() {
-      this.$router.push({ name: 'AboutMePage' });
+      this.$router.push({ name: 'AboutPage' });
     },
   },
   computed: {
