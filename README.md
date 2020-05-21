@@ -1,6 +1,6 @@
 # Personal website
 ![Build](https://github.com/denDAY04/denday04.github.io/workflows/Build/badge.svg?branch=development&event=push)
-> Hosted using github pages
+> Hosted using github pages on https://stensig.net
 
 ## Tools
 - Vue.js - Single-page application frontend
