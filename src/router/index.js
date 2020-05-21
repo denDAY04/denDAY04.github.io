@@ -29,5 +29,9 @@ export default new Router({
       name: 'AboutPage',
       component: AboutPage,
     },
+    {
+      path: '*',
+      redirect: '/',
+    },
   ],
 });
