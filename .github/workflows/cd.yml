@@ -1,7 +1,7 @@
 # This workflow will install dependencies (possible from cache), build the source code, and deploy the site to github pages.
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: CD
+name: Continuous Delivery
 
 on:
   push:
