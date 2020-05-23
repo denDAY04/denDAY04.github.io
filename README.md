@@ -1,5 +1,5 @@
 # Personal website
-![Build](https://github.com/denDAY04/denday04.github.io/workflows/Build/badge.svg?branch=development&event=push)
+![Build](https://github.com/denDAY04/denday04.github.io/workflows/Build/badge.svg?branch=development) ![Continuous Delivery](https://github.com/denDAY04/denday04.github.io/workflows/Continuous%20Delivery/badge.svg?branch=release)
 > Hosted using github pages on https://stensig.net
 
 ## Tools

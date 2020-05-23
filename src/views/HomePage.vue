@@ -65,31 +65,11 @@
 <script>
 export default {
   name: 'HomePage',
-  metaInfo() {
-    return {
-      title: 'Home',
-      link: [
-        { rel: 'canonical', href: this.metadata.url },
-      ],
-      meta: [
-        // OpenGraph data (Most widely used)
-        { property: 'og:title', content: this.metadata.title },
-        { property: 'og:url', content: this.metadata.url },
-
-        // Twitter card
-        { name: 'twitter:title', content: this.metadata.title },
-
-        // Google / Schema.org markup:
-        { itemprop: 'name', content: this.metadata.title },
-      ],
-    };
+  metaInfo: {
+    title: 'Home',
   },
   data() {
     return {
-      metadata: {
-        title: 'Home | Andreas Stensig portfolio',
-        url: `${process.env.VUE_APP_WEBSITE}${process.env.BASE_URL}#/`,
-      },
       showArrows: false,
       pages: [
         {
