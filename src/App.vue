@@ -52,7 +52,7 @@ export default {
       titleTemplate: `%s | ${process.env.VUE_APP_TITLE}`,
       meta: [
         { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' },
-        { 'http-equiv': 'content-type', content: 'text/html' },
+        { httpEquiv: 'content-type', content: 'text/html' },
 
         { charset: 'utf-8' },
 
@@ -63,14 +63,13 @@ export default {
         { name: 'description', content: this.metadata.description },
 
         { property: 'og:image', content: this.metadata.image },
-        { property: 'og:site_name', content: 'stensig.net' },
         { property: 'og:type', content: 'website' },
         { property: 'og:description', content: this.metadata.description },
 
         { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:image:src', content: this.metadata.image },
+        { name: 'twitter:site', content: '@denDAY04' },
+        { name: 'twitter:image', content: this.metadata.image },
         { name: 'twitter:description', content: this.metadata.description },
-        { name: 'twitter:creator', content: '@denDAY04' },
 
         { itemprop: 'image', content: this.metadata.image },
         { itemprop: 'description', content: this.metadata.description },

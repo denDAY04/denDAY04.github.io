@@ -77,7 +77,6 @@ export default {
         { property: 'og:url', content: this.metadata.url },
 
         // Twitter card
-        { name: 'twitter:site', content: this.metadata.url },
         { name: 'twitter:title', content: this.metadata.title },
 
         // Google / Schema.org markup:
