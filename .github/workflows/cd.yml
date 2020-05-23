@@ -1,11 +1,11 @@
 # This workflow will install dependencies (possible from cache), build the source code, and deploy the site to github pages.
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Deploy
+name: Continuous Delivery
 
 on:
-  release: 
-    types: [ published ]
+  push:
+    branches: [ release ]
 
 jobs:
   deploy:
@@ -48,6 +48,6 @@ jobs:
         publish_branch: master
         cname: stensig.net      # instead of manually copying a CNAME file into dist before publishing
         force_orphan: true      # don't keep history of publish commits on branch - only keep latest
-        commit_message: ${{ github.event.release.tag_name }}        # commit message from release tag
+        commit_message: 'Automated CD release'
         user_name: 'github-actions[bot]'                            # display bot author instead of actual
         user_email: 'github-actions[bot]@users.noreply.github.com'  # display bot author instead of actual
