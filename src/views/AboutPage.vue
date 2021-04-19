@@ -6,7 +6,7 @@
           <h1 class="area-title">About Me</h1>
         </v-card-title>
       </v-card>
-      <v-row align="center" class="mx-2" >
+      <v-row align="center" class="mx-2" style="padding-top: 1em;">
         <v-col cols="4">
           <v-img eager max-height="300" src="img/asj2.jpg" :style="border"
                  ref="andreas stensig jensen"
@@ -22,10 +22,9 @@
             </a>.
           </p>
           <p>
-            I  was born and raised in Slagelse, Denmark, and am currently living near the Danish
-            capital of Copenhagen, in the suburb called Hvidovre, where I share my apartment
-            with my girlfriend.
-          </p>
+            I was born and raised near Slagelse, Denmark, and am currently living in Ringsted,
+            Denmark.
+            </p>
           <p>
             I grew up with both my parents and two older sisters, and have
             been used to having dogs in the home all throughout my childhood years. Hence, my
@@ -40,7 +39,7 @@
       </v-row>
       <v-row align="center" class="mx-2">
         <v-col cols="8">
-          <h2 class="mb-3">Technology, engineering, science & knowledge</h2>
+          <h2 class="mb-3">Science, Technology, Engineering, and Mathematics (STEM)</h2>
           <p>
             I have had a keen interest in mathematics and the natural sciences ever since
             grade-school, and my passion for technology and engineering really came into being
