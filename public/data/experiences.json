@@ -57,6 +57,15 @@
     "type": "EMP"
   },
   {
+    "title": "Lead Developer",
+    "description": "Promotion to a senior developer position. New additional responsibilities (besides normal software engineering actiivities) include such things as technical lead on teams, mentoring and assisting other developers, information gathering and sharing on emerging technologies and paradigms.",
+    "company": "IT Minds",
+    "companyLink": "https://it-minds.dk/forside",
+    "companyLogo": "/img/itm.png",
+    "date": "2021-08",
+    "type": "EMP"
+  },
+  {
     "title": "Security in modern web-applications",
     "description": "Work-sponsored certification course showcasing the most common security issues and vulnerabilities in modern web-applications, and leaning how to combat these.",
     "company": "IT Minds",
