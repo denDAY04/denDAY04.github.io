@@ -30,7 +30,7 @@
             projects I have worked on. Simply click the banners below.
           </p>
           <p>
-            You can also found out more
+            You can also read more 
             <a @click="gotoAboutMe()" class="secondaryDark--text">about me</a>.
           </p>
         </v-card-text>
