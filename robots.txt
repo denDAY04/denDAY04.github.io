@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://stensig.net/sitemap.xml

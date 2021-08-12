@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Bachelor of Engineering",
+    "description": "Graduation - started degree in September 2013. Field of study: information technology, with a focus on web applications and system integration.",
+    "company": "Technical University of Denmark",
+    "companyLink": "https://www.dtu.dk/english",
+    "companyLogo": "/img/dtu.png",
+    "date": "2017-03",
+    "type": "EDU",
+    "attachments":  [
+      {
+        "href": "/documents/asj-bachelor-diploma-restricted.pdf",
+        "label": "Diploma"
+      }
+    ]
+  },
+  {
+    "title": "Master of Science in Engineering",
+    "description": "Graduation - started in September 2017. Field of study: Computer science engineering, with a focus on domain modeling, system architecture, and data security.",
+    "company": "Technical University of Denmark",
+    "companyLink": "https://www.dtu.dk/english",
+    "companyLogo": "/img/dtu.png",
+    "date": "2020-01",
+    "type": "EDU",
+    "attachments":  [
+      {
+        "href": "/documents/asj-master-diploma-restricted.pdf",
+        "label": "Diploma"
+      }
+    ]
+  },
+  {
+    "title": "Software Developer",
+    "description": "Six months Full-time internship (37.5 hrs/week) as part of B.Eng education.",
+    "company": "IT Minds",
+    "companyLink": "https://it-minds.dk/forside",
+    "companyLogo": "/img/itm.png",
+    "date": "2016-02",
+    "type": "EMP"
+  },
+  {
+    "title": "Software Developer",
+    "description": "Transition to part-time (15 hrs/week) parallel to study activities during B.Eng and MSc.Eng educations.",
+    "company": "IT Minds",
+    "companyLink": "https://it-minds.dk/forside",
+    "companyLogo": "/img/itm.png",
+    "date": "2016-07",
+    "type": "EMP"
+  },
+  {
+    "title": "Software Developer",
+    "description": "Transition to full-time (37.5 hrs/week). Work focused on designing and implementing web-applications and web-services, mainly in the Java and Spring ecosystems.",
+    "company": "IT Minds",
+    "companyLink": "https://it-minds.dk/forside",
+    "companyLogo": "/img/itm.png",
+    "date": "2020-02",
+    "type": "EMP"
+  },
+  {
+    "title": "Lead Developer",
+    "description": "Promotion to a senior developer position. New additional responsibilities (besides normal software engineering actiivities) include such things as technical lead on teams, mentoring and assisting other developers, information gathering and sharing on emerging technologies and paradigms.",
+    "company": "IT Minds",
+    "companyLink": "https://it-minds.dk/forside",
+    "companyLogo": "/img/itm.png",
+    "date": "2021-08",
+    "type": "EMP"
+  },
+  {
+    "title": "Security in modern web-applications",
+    "description": "Work-sponsored certification course showcasing the most common security issues and vulnerabilities in modern web-applications, and leaning how to combat these.",
+    "company": "IT Minds",
+    "companyLink": "https://it-minds.dk/forside",
+    "companyLogo": "/img/itm.png",
+    "date": "2016-08",
+    "type": "CC"
+  }
+]
