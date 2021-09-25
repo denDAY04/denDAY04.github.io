@@ -4,11 +4,15 @@
 name: Continuous Delivery
 
 on:
-  push:
-    branches: [ release ]
+  workflow_run:
+    workflows: [ "build" ]
+    branches: [ development ]
+    types:
+      - completed
 
 jobs:
   deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     strategy:
@@ -48,6 +52,6 @@ jobs:
         publish_branch: master
         cname: stensig.net      # instead of manually copying a CNAME file into dist before publishing
         force_orphan: true      # don't keep history of publish commits on branch - only keep latest
-        commit_message: 'Automated CD release'
+        commit_message: 'Automated release'
         user_name: 'github-actions[bot]'                            # display bot author instead of actual
         user_email: 'github-actions[bot]@users.noreply.github.com'  # display bot author instead of actual
