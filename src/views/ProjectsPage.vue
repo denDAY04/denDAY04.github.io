@@ -98,6 +98,10 @@ export default {
       }
     },
     projectComparator(a, b) {
+      // current project has null end-year
+      if (a.end === null) return 1;
+      if (b.end === null) return -1;
+
       if (a.start > b.start) return 1;
       if (a.start < b.start) return -1;
 
