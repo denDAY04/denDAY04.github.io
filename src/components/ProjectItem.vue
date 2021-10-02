@@ -66,8 +66,10 @@ export default {
     time() {
       const vm = this;
       let text = vm.item.start;
-      if (vm.item.end !== undefined) {
+      if (vm.item.end !== null && vm.item.end !== vm.item.start) {
         text += ` - ${vm.item.end}`;
+      } else if (vm.item.end === null) {
+        text += ' - now';
       }
       return text;
     },

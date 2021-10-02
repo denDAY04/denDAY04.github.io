@@ -15,6 +15,7 @@
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
     "start": 2019,
+    "end": 2019,
     "links": [
       {
         "label": "Homepage",
@@ -28,7 +29,8 @@
     "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Service-oriented architecture", "Mainframe/NATURAL analysis", "IBM DB2", "Docker", "Domain Driven Design (DDD)", "Elasticsearch", "GraphQL", "Apache Kafka", "Batch", "Web"],
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
-    "start": 2020
+    "start": 2020,
+    "end": null
   },
   {
     "title": "Optimise: File Management Platform",
@@ -52,6 +54,7 @@
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
     "start": 2018,
+    "end": 2018,
     "links": [
       {
         "label": "Homepage",
@@ -66,6 +69,7 @@
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
     "start": 2017,
+    "end": 2017,
     "links": [
       {
         "label": "Homepage",
@@ -79,7 +83,8 @@
     "skills": ["C#", ".NET Core", "ASP.NET MVC", "Microsoft SQL", "jQuery", "Web"],
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
-    "start": 2016
+    "start": 2016,
+    "end": 2016
   },
   {
     "title": "Maersk Oil Trading: Batch System",
@@ -87,7 +92,8 @@
     "skills": ["C++", "ODBC", "Microsoft SQL", "Batch"],
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
-    "start": 2016
+    "start": 2016,
+    "end": 2016
   },
   {
     "title": "Maersk Oil Trading: Resource Management Application",
@@ -95,7 +101,8 @@
     "skills": ["C++", "Microsoft Access", "ActiveX Data Objects (ADO)", "Visual Component Library (VCL)", "Desktop"],
     "affiliate": "IT Minds - contractor",
     "roles": ["Software engineer"],
-    "start": 2016
+    "start": 2016,
+    "end": 2016
   },
   {
     "title": "MSc.Eng Thesis: A Peer-Based Distributed Password Manager",
@@ -104,6 +111,7 @@
     "affiliate": "Education",
     "roles": ["Software engineer"],
     "start": 2020,
+    "end": 2020,
     "links": [
       {
         "label": "Document",
@@ -122,6 +130,7 @@
     "affiliate": "Education",
     "roles": ["Software engineer"],
     "start": 2017,
+    "end": 2017,
     "links": [
       {
         "label": "Document",
