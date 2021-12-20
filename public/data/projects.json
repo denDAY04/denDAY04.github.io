@@ -1,5 +1,14 @@
 [
   {
+    "title": "University Locker Rental PWA",
+    "description": "A short project creating an MVP for a PWA-based system that allows studetns and employees to rent lockers at their university. The system used Java for an API backend with many different third-party integraiton components, and a React PWA client. The team consisted of one frontend develoepr, one backend developer, and myself as the technical lead.",
+    "skills": ["Agile", "Java", "Spring Framework", "Gradle", "Hibernate", "React", "Progressive Web App (PWA)", "Data API", "MysQL", "Web", "Third-party integraiton"],
+    "affiliate": "IT Minds - contractor",
+    "roles": ["System architect", "Lead software engineer"],
+    "start": 2021,
+    "end": 2021
+  },
+  {
     "title": "EG: Municipal Economic Benefits Platform",
     "description": "A large-scale microservice web-platform offering municipal services regarding requesting, managing, and analysing economic benefit packages offered by the national government to private individuals. The services had a large focus on integrations to other third-party services e.g. taxation systems in order to satisfy their domain functionality. The agile development process included a team of developers (10+), UX designers, testers, and veteran domain experts.",
     "skills": ["Agile", "Java", "Spring Framework", "Maven", "Hibernate", "Backbone.js", "Microservice architecture", "Single-page application (SPA)", "REST API", "Model-view-Viewmodel (MVVM)", "IBM DB2", "Domain Driven Design (DDD)", "Web"],
